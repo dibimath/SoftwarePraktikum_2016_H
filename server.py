@@ -7,15 +7,12 @@ def hello_world():
 
 @app.route('/swp')
 def swp():
-    print("break1")
-    print("break2")
-    print("break3")
-    return ''
+    return app.send_static_file('index.html')
 
 
 @app.route('/test')
 def test():
-    return 'test'
+    return 'a longer test'
 
 if __name__ == '__main__':
     app.run(debug=True)
