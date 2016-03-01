@@ -1,0 +1,13 @@
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="test_item">TEST TEXT</div>
+	<script>
+		$.get('/test', function(data) {
+			$('#test_item').html(data);
+		});
+	</script>
+	static file --- changed
+</body>
